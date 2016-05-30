@@ -1,4 +1,4 @@
-module.exports = function (req, callback) {
+api.postParser = function (req, callback) {
 	if (req.method !== "POST") {
 		return undefined;
 	}

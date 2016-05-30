@@ -1,5 +1,3 @@
-var fs = require('fs');
-
 function readPersonFromFile(callback) {
 	fs.readFile('./person.json', function(error, data) {
 		var person = {};
@@ -20,7 +18,7 @@ function writePersoneToFile(data, callback) {
 	fs.writeFile('./person.json', data, callback);
 }
 
-module.exports = {
+api.model = {
 	readPersonFromFile: function (callback) {
 		fs.readFile('./person.json', function(error, data) {
 			var person = {};
